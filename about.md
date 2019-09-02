@@ -4,15 +4,9 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+welcome to words. this site is intended to be a place for me to write and host different articles, opinion pieces and reviews. I plan to keep this site basic, with the focus being on the writing.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+I am hosting the site through GitHub Pages and using Jekyll to structure the site
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+visit the repo for the site here:
+## [github.com/viri-space/words](https://github.com/viri-space/words)
