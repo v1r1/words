@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: words
-email: admin@viri.xyz
+# email:
 description: >- # this means to ignore newlines until "baseurl:"
   This is my blog site, words. It's hosted on a Github repo through Github Pages. This is a project being run under the VIRI.SPACE name. Check out http://viri.space to learn more!
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -24,9 +24,16 @@ github_username:  viri-space
 
 # Build settings
 markdown: kramdown
-theme: minima
+remote_theme: b2a3e8/jekyll-theme-console
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
+style: dark
+header_pages:
+  - index.md
+  - about.md
+footer: words is a VIRI.SPACE project
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
