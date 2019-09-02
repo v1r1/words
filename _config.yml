@@ -24,7 +24,7 @@ github_username:  viri-space
 
 # Build settings
 markdown: kramdown
-remote_theme: poole/poole
+remote_theme: viri-space/XYZ@jekyll
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
