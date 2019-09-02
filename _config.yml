@@ -24,7 +24,7 @@ github_username:  viri-space
 
 # Build settings
 markdown: kramdown
-remote_theme: b2a3e8/jekyll-theme-console
+remote_theme: the-development/flex
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
