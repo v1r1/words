@@ -29,10 +29,6 @@ plugins:
   - jekyll-feed
   - jekyll-remote-theme
 style: dark
-header_pages:
-  - index.md
-  - about.md
-footer: words is a VIRI.SPACE project
 
 
 # Exclude from processing.
