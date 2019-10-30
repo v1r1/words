@@ -16,7 +16,7 @@
 title: words
 # email:
 description: >- # this means to ignore newlines until "baseurl:"
-  This is my blog site, words. It's hosted on a Github repo through Github Pages. This is a project being run under the VIRI.SPACE name. Check out http://viri.space to learn more!
+  This is my blog site, Wordless. It's hosted on a Github repo through Github Pages. This is a project being run under the VIRI.SPACE name. Check out http://viri.space to learn more!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: viri_space
@@ -24,7 +24,7 @@ github_username:  viri-space
 
 # Build settings
 markdown: kramdown
-remote_theme: viri-space/XYZ@jekyll
+remote_theme: pages-themes/minimal
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
