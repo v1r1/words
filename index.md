@@ -1,7 +1,7 @@
 ---
-title: /
+title: home
 layout: home
-permalink: Home
+permalink: /
 ---
 
 this is the index page, might replace with a list of posts at some point.
