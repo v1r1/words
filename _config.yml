@@ -7,9 +7,16 @@ url: "https://words.viri.space" # the base hostname & protocol for your site, e.
 twitter_username: viri_space
 github_username:  viri-space
 
+# Page settings
+footer: 'Wordless is a <a href="https://viri.space">viri.space</a> project'
+style: dark
+header_pages:
+  - index.md
+  - about.md
+
 # Build settings
 markdown: kramdown
-remote_theme: akiritsu/pRoJEct-NeGYa
+remote_theme: b2a3e8/jekyll-theme-console
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
