@@ -10,7 +10,7 @@ github_username:  viri-space
 # Page settings
 footer: 'Wordless is a <a href="https://viri.space">viri.space</a> project'
 style: dark
-header_pages:
+nav_pages:
   - index.md
   - about.md
 
