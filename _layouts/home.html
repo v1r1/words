@@ -2,6 +2,8 @@
 layout: default
 ---
 
+{% include head.html %}
+
 {{ content }}
 {% assign contentwonl = content | strip_newlines %} {% unless contentwonl == ""  %} <br /> {% endunless %} <!-- add line break if there is any content -->
 
@@ -14,3 +16,5 @@ layout: default
   </div>
   {%- endfor -%}
 {%- endif -%}
+
+{% include footer.html %}
