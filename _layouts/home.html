@@ -1,22 +1,37 @@
----
-layout: default
----
 
-{% include head.html %}
 
-{% include nav.html %}
-
-{{ content }}
-{% assign contentwonl = content | strip_newlines %} {% unless contentwonl == ""  %} <br /> {% endunless %} <!-- add line break if there is any content -->
-
-{%- if site.posts.size > 0 -%}
-  {%- for post in site.posts -%}
-  <div>
-    <h2><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
-    <h4>{%- assign date_format = "%Y-%m-%d" -%} [ {{ post.date | date: date_format }} ]</h4>
-    <p><i>[ {{ post.tags }} ]</i></p>
-  </div>
-  {%- endfor -%}
-{%- endif -%}
 
 {% include footer.html %}
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: page.lang | default: 'en' }}">
+
+  {% include head.html %}
+
+  <body>
+    {% include nav.html %}
+
+    <main class="main" aria-label="Content">
+
+      <h1>{{ page.title }}</h1>
+
+      {{ content }}
+
+      {% assign contentwonl = content | strip_newlines %} {% unless contentwonl == ""  %} <br /> {% endunless %} <!-- add line break if there is any content -->
+
+      {%- if site.posts.size > 0 -%}
+        {%- for post in site.posts -%}
+        <div>
+          <h2><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
+          <h4>{%- assign date_format = "%Y-%m-%d" -%} [ {{ post.date | date: date_format }} ]</h4>
+          <p>{{ post.excerpt }}</p>
+          <p><i>[ {{ post.tags }} ]</i></p>
+        </div>
+        {%- endfor -%}
+      {%- endif -%}
+
+    </main>
+
+    {% include footer.html %}
+  </body>
+
+</html>
