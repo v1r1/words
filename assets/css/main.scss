@@ -2,9 +2,9 @@
 ---
 @charset "utf-8";
 
-@import 'vendor/normalize';
+@import '/assets/sass/vendor/normalize';
 
-@import 'base/root';
+@import '/assets/sass/base/root';
 
 html {
   margin: auto;
