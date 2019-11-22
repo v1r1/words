@@ -2,8 +2,10 @@
 layout: default
 ---
 
-<h2>{{ post.title }}</h2>
-<h4>{%- assign date_format = "%Y-%m-%d" -%} [ {{ post.date | date: date_format }} ]</h4>
-<p><i>[ {{ post.tags }} ]</i></p>
-  
+<div class="post-header">
+  <h2>{{ post.title }}</h2>
+  <h4>{%- assign date_format = "%Y-%m-%d" -%} [ {{ post.date | date: date_format }} ]</h4>
+  <p>[ {{ post.tags }} ]</p>
+</div>
+
 {{ content }}
