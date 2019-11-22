@@ -5,15 +5,15 @@ layout: default
 {{ content }}
 
 {% assign contentwonl = content | strip_newlines %} {% unless contentwonl == ""  %} <br /> {% endunless %} <!-- add line break if there is any content -->
-<!-- <div class="post-container">
+<div class="post-container">
 {%- if site.posts.size > 0 -%}
   {%- for post in site.posts -%}
   <div class="post">
     <h1><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h1>
     <h4>{%- assign date_format = "%Y-%m-%d" -%} {{ post.date | date: date_format }}</h4>
     <p>{{ post.excerpt }}</p>
-    <p>Tags: <i>{{ post.tags | split: ’,’ }}</i></p>
+    <p>Tags: <i>{{ post.tags }}</i></p>
   </div>
   {%- endfor -%}
 {%- endif -%}
-</div> -->
+</div>
