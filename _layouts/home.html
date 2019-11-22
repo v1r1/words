@@ -9,7 +9,7 @@ layout: default
 {%- if site.posts.size > 0 -%}
   {%- for post in site.posts -%}
   <div class="post">
-    <h2><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
+    <h1><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h1>
     <h4>{%- assign date_format = "%Y-%m-%d" -%} {{ post.date | date: date_format }}</h4>
     <p>{{ post.excerpt }}</p>
     <p>Tags: <i>{{ post.tags | split: ’,’ }}</i></p>
