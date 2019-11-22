@@ -9,8 +9,8 @@ layout: default
 {%- if site.posts.size > 0 -%}
   {%- for post in site.posts -%}
   <div class="post">
-    <h1><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h1>
-    <h4>{%- assign date_format = "%Y-%m-%d" -%} {{ post.date | date: date_format }}</h4>
+    <h1 class="title"><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h1>
+    <h4 class="date">{%- assign date_format = "%Y-%m-%d" -%} {{ post.date | date: date_format }}</h4>
     <p>{{ post.excerpt }}</p>
     <p>Tags: <i>{{ post.tags }}</i></p>
   </div>
