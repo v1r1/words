@@ -10,9 +10,9 @@ layout: default
   {%- for post in site.posts -%}
   <div class="post">
     <h2><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
-    <h4>{%- assign date_format = "%Y-%m-%d" -%} [ {{ post.date | date: date_format }} ]</h4>
+    <h4>{%- assign date_format = "%Y-%m-%d" -%} {{ post.date | date: date_format }}</h4>
     <p>{{ post.excerpt }}</p>
-    <p><i>[ {{ post.tags }} ]</i></p>
+    <p>Tags: <i>{{ post.tags | split: ’,’ }}</i></p>
   </div>
   {%- endfor -%}
 {%- endif -%}
