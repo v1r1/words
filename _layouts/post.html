@@ -1,24 +1,11 @@
-<!DOCTYPE html>
-<html lang="{{ site.lang | default: page.lang | default: 'en' }}">
+---
+layout: default
+---
 
-  {% include head.html %}
+<div class="post-header">
+  <h2>{{ layout.title }}</h2>
+  <h4>{%- assign date_format = "%Y-%m-%d" -%} [ {{ layout.date | date: date_format }} ]</h4>
+  <p>[ {{ layout.tags }} ]</p>
+</div>
 
-  <body>
-    {% include nav.html %}
-
-    <main class="main" aria-label="Content">
-
-      <div class="post-header">
-        <h2>{{ post.title }}</h2>
-        <h4>{%- assign date_format = "%Y-%m-%d" -%} [ {{ post.date | date: date_format }} ]</h4>
-        <p>[ {{ post.tags }} ]</p>
-      </div>
-
-      {{ content }}
-
-    </main>
-
-    {% include footer.html %}
-  </body>
-
-</html>
+{{ content }}
