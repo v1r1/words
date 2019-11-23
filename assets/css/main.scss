@@ -20,12 +20,6 @@ header {
   padding: 5px 20px;
   margin: 20px 5px;
 }
-.post-header {
-  background:#333;
-  text-align: center;
-  padding: 5px 20px;
-  margin: 20px 5px;
-}
 .post .title {
   margin-bottom: 0;
 }
@@ -35,6 +29,19 @@ header {
 .post .excerpt {
   background: #222;
   padding: 10px;
+}
+.post-header {
+  background:#333;
+  text-align: center;
+  padding: 5px 20px;
+  margin: 20px 5px;
+}
+.post-header .title {
+  margin-bottom: 0;
+  font-size: 3em;
+}
+.post-header .date {
+  margin-top: 10px;
 }
 
 main img {
