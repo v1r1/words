@@ -21,14 +21,18 @@ header {
   margin: 20px 5px;
 }
 .post .title {
-  margin-bottom: 0;
+  margin: 5px 0;
 }
 .post .date {
-  margin: 0;
+  margin: 5px 0;
 }
 .post .excerpt {
   background: #222;
+  margin: 5px 0;
   padding: 10px;
+}
+.post .tags {
+  margin: 5px 0;
 }
 .post-header {
   background:#333;
