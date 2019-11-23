@@ -12,7 +12,7 @@ layout: default
     <h1 class="title"><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h1>
     <h4 class="date">{%- assign date_format = "%Y-%m-%d" -%} {{ post.date | date: date_format }}</h4>
     <div class="excerpt">{{ post.excerpt }}</div>
-    <div>Tags: <i>{{ post.tags }}</i></div>
+    <div class="tags">Tags: <i>{{ post.tags }}</i></div>
   </div>
   {%- endfor -%}
 {%- endif -%}

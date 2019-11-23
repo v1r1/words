@@ -37,11 +37,14 @@ header {
   margin: 20px 5px;
 }
 .post-header .title {
-  margin-bottom: 0;
+  margin: 5px 0;
   font-size: 3em;
 }
 .post-header .date {
-  margin-top: 10px;
+  margin: 5px 0;
+}
+.post-header .tags {
+  margin: 5px 0;
 }
 
 main img {
