@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="post-header">
+<div class="post-header {{ page.type }}">
   <h2 class="title">{{ page.title }}</h2>
   <h4 class="date">{%- assign date_format = "%Y-%m-%d" -%} {{ page.date | date: date_format }}</h4>
   <p>Tags: {{ page.tags }} | Word Count: {{ page.content | number_of_words }}</p>
